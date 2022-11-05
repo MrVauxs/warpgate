@@ -66,6 +66,6 @@ export class Propagator{
                 }
             }
         }
-        return !collision || !canvas.walls.checkCollision(new Ray(origin, {x:position.x+tokenData.width*canvas.scene.dimensions.size/2,y:position.y+tokenData.height*canvas.scene.dimensions.size/2}));
+        return !collision || !canvas.walls.checkCollision(new Ray(origin, {x:position.x+tokenData.width*canvas.scene.dimensions.size/2,y:position.y+tokenData.height*canvas.scene.dimensions.size/2})).length;
     }
 }
